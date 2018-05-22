@@ -7,14 +7,13 @@
 #: Options      : install, add, update
 
 #Creating a Dotfiles folder 
-DOTFILES=$HOME/.dotfiles
+DOTFILES=$HOME/DotFiles
 
 case "$1" in 
   install )
-    mkdir $HOME/.dotfiles
-    git clone https://github.com/LoneWolf38/DotFiles.git $HOME/.dotfiles
-    ln -s $HOME/.dotfiles/.bashrc $HOME/.bashrc
-    ln -s $HOME/.dotfiles/i3/config $HOME/.config/i3/config
+    git clone https://github.com/LoneWolf38/DotFiles.git $HOME/DotFiles
+    ln -s $HOME/DotFiles/.bashrc $HOME/.bashrc
+    ln -s $HOME/DotFiles/.config/i3/config $HOME/.config/i3/config 
 ;;
   add | -a )
     echo "Add"
