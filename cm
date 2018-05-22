@@ -1,0 +1,28 @@
+#! /bin/sh
+#: Title        : cm
+#: Date         : 21st May,2018
+#: Author       : Debabrata Choudhury
+#: Version      : 1.0
+#: Descrpitons  : A script to maintain my Dotfiles
+#: Options      : install, add, update
+
+#Creating a Dotfiles folder 
+DOTFILES=$HOME/.dotfiles
+
+case "$1" in 
+  install )
+    mkdir $HOME/.dotfiles
+    git clone https://github.com/LoneWolf38/DotFiles.git $HOME/.dotfiles
+    ln -s $HOME/.dotfiles/.bashrc $HOME/.bashrc
+    ln -s $HOME/.dotfiles/i3/config $HOME/.config/i3/config
+;;
+  add | -a )
+    echo "Add"
+;;
+  "" | " ")
+    echo "Error"
+;;
+  update | -u )
+      echo "Updated"
+;;
+esac
