@@ -12,8 +12,25 @@ DOTFILES=$HOME/DotFiles
 case "$1" in 
   install )
     git clone https://github.com/LoneWolf38/DotFiles.git $HOME/DotFiles
+    if [ -e .bashrc ]
+      
     ln -s $HOME/DotFiles/.bashrc $HOME/.bashrc
-    ln -s $HOME/DotFiles/.config/i3/config $HOME/.config/i3/config 
+    ln -s $HOME/DotFiles/.config/i3/config $HOME/.config/i3/config
+    if [ -e .bash_history ]
+    then
+      rm .bash_history
+    fi
+    if [ -e .bash_logout ]
+    then
+      rm .bash_logout
+    fi
+    if [ -e .gitconfig ]
+    then 
+        rm .gitconfig
+    fi
+
+
+
 ;;
   add | -a )
     echo "Add"
