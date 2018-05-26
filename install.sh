@@ -10,6 +10,8 @@ pkgInstall()
   echo "[archlinuxfr] 
     Siglevel = Never 
     Server = http://repo.archlinux.fr/\$arch " >> /etc/pacman.conf
+    echo "Updating the System"
+    pacman -Syu
   echo " Installing Packages from official Repo... "
   pacman -S - < paclist
   clear

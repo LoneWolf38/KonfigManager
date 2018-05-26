@@ -1,5 +1,4 @@
 alpm_octopi_utils
-awesome-freedesktop-git
 awf-git
 bashdb
 botan1.10
@@ -22,6 +21,7 @@ emerald-themes
 exercism-cli
 ffmpeg2.8
 fiddler
+figlet-fonts
 flatabulous
 flatplat-theme
 flattr-icon-theme
@@ -46,6 +46,7 @@ gstreamer0.10-ugly-plugins
 gtk-theme-config
 i3ipc-glib-git
 i3lock-color-git
+jave
 js
 js17
 js38
@@ -111,12 +112,14 @@ q4wine
 qtwebkit
 ramme
 remarkable
+rig
 rocketchat-client
 rpm-org
 rtv
 screenkey
 shutter
 siji-git
+skippy-xd-git
 slack-desktop
 soulseekqt
 speedometer
@@ -128,6 +131,8 @@ teamviewer
 telegram-purple
 termsyn-font
 tint3
+toilet
+toilet-fonts
 touchpad-indicator-bzr
 ttf-material-icons
 ttf-monofur
@@ -140,6 +145,7 @@ vim-vim-support
 webkitgtk
 whereami
 wscat
+xcowsay
 xdman
 xorg-utils
 yad

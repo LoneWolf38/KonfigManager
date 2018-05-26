@@ -12,24 +12,75 @@ DOTFILES=$HOME/DotFiles
 case "$1" in 
   install )
     git clone https://github.com/LoneWolf38/DotFiles.git $HOME/DotFiles
+
+    echo "Replacing the important config files....."
+    #-----------------Replacing the important config files (now if)---------------------#
     if [ -e .bashrc ]
-      
-    ln -s $HOME/DotFiles/.bashrc $HOME/.bashrc
-    ln -s $HOME/DotFiles/.config/i3/config $HOME/.config/i3/config
+    then
+      rm ~/.bashrc
+      ln -s ${DOTFILES}.bashrc $HOME/.bashrc
+  else
+    ln -s ${DOTFILES}/.bashrc $HOME/.bashrc
+  fi
+    ln -s ${DOTFILES}/.config/i3/config $HOME/.config/i3/config
     if [ -e .bash_history ]
     then
       rm .bash_history
+      ln ${DOTFILES}/.bash_history $HOME/.bash_history
+    else
+      ln ${DOTFILES}/.bash_history $HOME/.bash_history
     fi
     if [ -e .bash_logout ]
     then
       rm .bash_logout
+      ln ${DOTFILES}/.bash_logout $HOME/.bash_logout
+    else
+      ln ${DOTFILES}/.bash_logout $HOME/.bash_logout
     fi
     if [ -e .gitconfig ]
     then 
         rm .gitconfig
+        ln ${DOTFILES}/.gitconfig $HOME/.gitconfig
+    else
+        ln ${DOTFILES}/.gitconfig $HOME/.gitconfig
     fi
-
-
+    if [ -e .vimrc ]
+    then 
+      rm ~/.vimrc
+      ln ${DOTFILES}/.vimrc $HOME/.vimrc
+    else
+      ln ${DOTFILES}/.vimrc $HOME/.vimrc
+    fi
+    if [ -e .Xauthority ]
+    then 
+      rm ~/.Xauthority
+      ln ${DOTFILES}/.Xauthority $HOME/.Xauthority
+    else
+      ln ${DOTFILES}/.Xauthority $HOME/.Xauthority 
+    fi
+    if [ -e ~/.Xdefaults ]
+    then 
+      rm ~/.Xdefaults
+      ln ${DOTFILES}/.Xdefaults $HOME/.Xdefaults
+    else
+      ln ${DOTFILES}/.Xdefaults $HOME/.Xdefaults
+    fi
+    if [ -e ".gtkrc-2.0" ]
+    then 
+      rm $HOME/.gtkrc-2.0
+      cp ${DOTFILES}/.gtkrc-2.0 $HOME/
+    else
+      cp ${DOTFILES}/.gtkrc-2.0 $HOME/
+    fi
+    if [ -e rofi.conf ]
+    then
+      rm rofi.conf
+      ln -s ${DOTFILES}/rofi.conf $HOME/rofi.conf
+    else
+      ln -s ${DOTFILES}/rofi.conf $HOME/rofi.conf
+    fi
+    cp ${DOTFILES}/.mailcap $HOME
+    cp ${DOTFILES}/.offlineimaprc $HOME
 
 ;;
   add | -a )
