@@ -44,6 +44,7 @@ gstreamer0.10-good
 gstreamer0.10-ugly
 gstreamer0.10-ugly-plugins
 gtk-theme-config
+haskell-mtl
 i3ipc-glib-git
 i3lock-color-git
 jave
@@ -103,7 +104,6 @@ pycharm-professional
 python-access_points
 python-colorlog
 python-iniparse
-python-pywal
 python2-colorlog
 python2-iniparse
 python2-pyliblzma
@@ -134,6 +134,7 @@ tint3
 toilet
 toilet-fonts
 touchpad-indicator-bzr
+trizen
 ttf-material-icons
 ttf-monofur
 ttf-unifont

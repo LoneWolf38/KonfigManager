@@ -207,6 +207,7 @@ gvfs-smb
 gvim
 gypsy
 gzip
+hamster-time-tracker
 hddtemp
 hitori
 htop
@@ -253,6 +254,7 @@ linux-headers
 llvm
 logrotate
 lolcat
+lshw
 lua-lpeg
 lvm2
 lxappearance
@@ -441,6 +443,7 @@ rygel
 s-nail
 samba
 sane
+scim
 scratch
 screenfetch
 screenkey
@@ -508,6 +511,7 @@ traceroute
 tracker
 transmission-cli
 transmission-gtk
+trizen
 ttf-material-icons
 ttf-monofur
 ttf-unifont
