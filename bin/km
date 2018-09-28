@@ -9,6 +9,9 @@
 #Creating a Dotfiles folder 
 DOTFILES=$HOME/DotFiles
 
+files=('.bashrc','.bash_history','.bash_logout','.bash_profile','.vimrc')
+
+
 case "$1" in 
   install )
     git clone https://github.com/LoneWolf38/DotFiles.git $HOME/DotFiles
@@ -91,5 +94,8 @@ case "$1" in
 ;;
   update | -u )
       echo "Updated"
+;;
+      *)
+      echo "done"
 ;;
 esac

@@ -114,6 +114,7 @@ flattr-icon-theme
 flex
 fortune-mod
 four-in-a-row
+fzf
 gawk
 gcc
 gcc-libs
@@ -177,6 +178,8 @@ gnome-weather
 gnu-netcat
 gnuplot
 googler
+gpart
+gparted
 gptfdisk
 grep
 grilo-plugins
@@ -247,6 +250,9 @@ libxml++-docs
 libxml++2.6
 libxml++2.6-docs
 licenses
+lightdm-gtk-greeter
+lightdm-webkit-theme-aether
+lightdm-webkit2-greeter
 lightsoff
 lilypond
 linux
@@ -265,6 +271,7 @@ man-db
 man-pages
 mdadm
 midori
+mlocate
 moc
 mosh
 mousetweaks
@@ -285,6 +292,7 @@ neofetch
 neomutt
 neomutt-git
 neovim
+nerd-fonts-source-code-pro
 netctl
 netdata
 nethogs
@@ -366,7 +374,7 @@ pidgin-talkfilters
 pidgin-toobars
 pidgin-xmpp-receipts
 pkcs11-helper
-pkg-config
+pkgconf
 playerctl
 plymouth-theme-arch-charge
 plymouth-theme-arch-charge-big
@@ -383,6 +391,7 @@ powerline-vim
 powerline2
 powertop
 procps-ng
+pscircle-git
 psmisc
 pstoedit
 pulseaudio
@@ -451,7 +460,6 @@ scrot
 seahorse
 sed
 shadow
-shutter
 siji-git
 simplescreenrecorder
 skippy-xd-git
@@ -470,6 +478,7 @@ sublime-text
 sublime-text-dev
 sudo
 super-flat-remix-icon-theme
+surf
 sushi
 swell-foop
 sysfsutils
@@ -515,6 +524,8 @@ trizen
 ttf-material-icons
 ttf-monofur
 ttf-unifont
+tty-clock
+udftools
 ufw-extras
 uget
 unclutter
@@ -570,6 +581,7 @@ virtualbox-sdk
 visualvm
 vlc
 vte3
+vtop
 w3m
 websocketpp
 wget
